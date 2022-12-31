@@ -22,7 +22,7 @@ const Word = ({ word:w }) => {
     }
     const del = () => {
         if (window.confirm('삭제하시겠습니까?')) {
-            fetch(`http://localhost:3001/words/${word.id}`, {
+            fetch(`https://my-json-server.typicode.com/seonghong1/REACT_VOCA/words/${word.id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"
